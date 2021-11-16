@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bordes.jpg)}
+
+header .imgajo {
+    width: 100%;
+    background-color: rgba(204, 14, 14, 0.712);
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+.container .row .col{
+    background-color: rgba(255, 255, 255, 0.637);
+}
+.container .row .col img{
+    width: 40%;
+}
+
