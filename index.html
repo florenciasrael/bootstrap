@@ -12,143 +12,180 @@
 </head>
 <body>
     
-    <header class="container-fluid">
+    <header class=" header container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="imgajo">
-                        <img src="LOGO.png" alt="">
-                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#"><img src="LOGO.png" alt=""></a>
+                          <!-- botton hamburger -->
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                          <!-- MENÚ, cambio las palabras y pongo las mias de mis secciones  -->
+                          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
+                              <li class="nav-item">
+                               <a href="index.html#SobreMi"> <a class="nav-link active" aria-current="page" href="#">Sobre Mí</a></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">E-Books</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Mi Perfil
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#">Carrito</a></li>
+                                  <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                </ul>
+                              </li>
+                              
+                            </ul>
+                            </div>
+                    
+                            <form class="d-flex">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                          </div>
+                        </div>
+                      </nav>
                 </div>
-                <div class="col">
-                    <div class="txt">
-                        <a href="https://florenciasrael.github.io/MeetAndGreet/index.html"> Meet&Greet</a>
-                        <a href="https://florenciasrael.github.io/CVPaulina/">Curriculum Vitae</a>
-                    </div>
-                </div>
+                
             </div>    
         </div>
     </header>
 
 
     <section>
-        <div class="carrousell">
-            <img src="cajanegra.jpg" alt="">
-            <img src="mirtha.jpg" alt="">
-            <img src="mamones.jpg" alt="">
-            <img src="" alt="">
+        <div class="slider container-fluid">
 
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <!--indicadores tiene q haber concordancia, no puedo tener 4 items y 2 indicadores. con el data-bs-slide-to le indico q foto sigue despues de esa img-->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <!--contenido del slider img, si elijo el slider con texto abajo de la img tengo el espaciode los textos-->
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active">
+                        <a href="https://almacen.paulinacocina.net/producto/curso-1000prep-el-arte-de-cocinar-y-guardar/?v=5b61a1b298a0"><img src="slider1.jpg" class="d-block w-100" alt="..."></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="https://almacen.paulinacocina.net/producto/curso-1000prep-el-arte-de-cocinar-y-guardar/?v=5b61a1b298a0"><img src="slider2.jpg" class="d-block w-100" alt="..."></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="https://almacen.paulinacocina.net/producto/ebook-manual-de-supervivencia/"><img src="slider3.png" class="d-block w-100" alt="..."></a>
+                      </div>
+                    </div>
+                    <!-- CONTROLES < y > -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
         </div>
         
-        <div class="container-fluid">
-                <h1>E-BOOKS</h1>
+        <div class=" sections container-fluid" id="SobreMi">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <a href="https://florenciasrael.github.io/CVPaulina/">
+                <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">SOBRE MI</h5>
+                  <p class="card-text">¿Queres conocerme un poco mas? Te invito a ver mi Curriculum Vitae</p>
+                </div>
+              </div></a>
+            </div>
+            <div class="col">
+              <a href="https://florenciasrael.github.io/MeetAndGreet/index.html"><div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">MEET & GREET</h5>
+                  <p class="card-text">Participá del sorteo y vení a pasar un dia conmigo donde vamos a aprender tips de cocina y pasar un hermoso momento juntos.</p>
+                </div>
+              </div>
+            </div></a>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">MERCHANDISING</h5>
+                  <p class="card-text">No te quedes sin tu delantal para cocinar!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">ENTREVISTAS</h5>
+                  <p class="card-text">Te invito a ver los programas en los que estuve y sus mejores momentos!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">CURSOS</h5>
+                  <p class="card-text"> Se acabó lo que se daba, BASTA DE DELIVERY!! Aprende a cocinar conmigo, dale que es mas facil de lo que pensas</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <a href="https://www.youtube.com/c/PaulinaCocinaNetBlog"><div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">YOUTUBE</h5>
+                  <p class="card-text">No tenes plata o ganas de hacerte un curso?? No te preocupes, en youtube tengo mil recetas y tips para que puedas ser un maestro</p>
+                </div>
+              </div>
+            </div></a>
+          </div>   
         </div>
 
+        <div class="ebook container">
 
-<div class="container">
-    <div class="row justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <!--indicadores tiene q haber concordancia, no puedo tener 4 items y 2 indicadores. con el data-bs-slide-to le indico q foto sigue despues de esa img-->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  
+                </div>
+                <!--contenido del slider img, si elijo el slider con texto abajo de la img tengo el espaciode los textos-->
+                <div class="carousel-inner">
 
-        <div class="col">
-            <div class="img">
-                <img src="supervivencia.png" alt="">
+                  <div class="carousel-item active">
+                    <a href=""><img src="ebookk.png" class="d-block w-100" alt="..."></a>
+                  </div>
+                
+                </div>
             </div>
-            <div class="txt">
-                <h2>Manual de Supervivencia para tu primera cocina</h2>
-                <h6>Una guía para quienes no saben cocinar</h6>
-                <p>El delivery está muy bien, pero ¿y los desayunos? ¿Y si invitas gente? ¿Y los almuerzos? Pedir comida o salir a restaurantes te pueden fundir en diez días.
-                    Necesitas aprender a cocinarte para cuidar tu subsistencia.</p>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="img">
-                <img src="mealprep.png" alt="">
-            </div>
-            <div class="txt">
-                <h2>Ebook Meal Prep</h2>
-                <h6>Si nos organizamos, comemos todos</h6>
-                <p>Meal Prep es un manualazo completo para cocinar y guardar, para organizarse en la cocina diaria. Tiene desde cómo guardar cada vegetal hasta sesiones de pollo, legumbres, veganas, sin tacc. De todo. Además de MILES de tips (calditos, cubitos de pesto, pasta de ajo, etc.)
-
-                    ¿Tu libro fav? Claro que si y en formato ebook.</p>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="img">
-                <img src="abctartas.png" alt="">
-            </div>
-            <div class="txt">
-                <h2>Ebook ABC de tartas</h2>
-                <p>Recetas ricas y variadas. Secretos para una masa crocante. Opciones con y sin TACC. Rellenos de carne, pollo y vegetarianos.En este ebook te traigo más de treinta recetas con ideas nuevas y otras que ya conocemos, pero con secretitos para que te animes a dejar volar tu imaginación con tus propias creaciones.</p>
-            </div>
-        </div>
 
     </div>
-</div>
-        
+        </div>
 
-<div class="barra"></div>
+
+
     </section>
 
-<footer class="container">
+<footer class="container-fluid">
+  <div class="footer container">
     <div class="row">
         <p class="col">Florencia Sol Srael</p>
         <p class="col"> 2021 </p>
         <p class="col"> Producción Digital II</p>   
     </div>
+  </div>
 </footer>
 
-<script>
-    <!-- Código de JavaScript para Slider -->	
-
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            // acá define qué elemento entra en el slider
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {slideIndex = 1} 
-            if (n < 1) {slideIndex = x.length} ;
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none"; 
-            }
-            x[slideIndex-1].style.display = "block"; 
-        }
-
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none"; 
-            }
-            slideIndex++;
-            if (slideIndex > x.length) {slideIndex = 1} 
-            x[slideIndex-1].style.display = "block"; 
-            setTimeout(carousel, 2500); // Cambia la imagen cada 2,5 segundos
-        }
-        </script>	
-        <!-- Fin de Código de JavaScript para Slider -->
-
-<script>		
-        function myFunction() {
-        var x = document.getElementById("barranav");
-        if (x.className === " ") {
-            x.className += "responsive";
-        } else {
-         x.className = " ";
-        }
-    }
-</script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
-
- <!-- Código de JavaScript para Bootstrap -->	
+<!-- Código de JavaScript para Bootstrap -->	
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
