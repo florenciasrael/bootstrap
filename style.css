@@ -4,14 +4,26 @@
 }
 
 body {
-    background-image: url(bordes.jpg)
+    background-image: url(bordes.jpg);
 }
 header {
     background-color: rgba(182, 34, 34, 0.644);
     width: 100%;
+    margin-bottom: 30px;
 }
 
+.slider-container-fluid {
+    margin-bottom: 50px;
+}
+.sections-container-fluid {
+    margin-bottom: 50px;
+}
+.sections-container-fluid :hover{
+    background-color: rgba(196, 19, 19, 0.404);
+    color: white;
+}
 
 footer {
     background-color: rgba(182, 34, 34, 0.644);
+    text-align: center;
 }
