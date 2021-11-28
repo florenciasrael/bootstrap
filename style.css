@@ -1,27 +1,70 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Outfit', sans-serif;
 }
 
 body {
     background-image: url(bordes.jpg);
 }
 header {
-    background-color: rgba(182, 34, 34, 0.644);
+    background-color: rgba(182, 34, 34, 0.74);
     width: 100%;
     margin-bottom: 30px;
+    margin-top: 0px;
+    animation-name: header;
+    animation-duration: 0,5s;
 }
+.logoheader img {
+    margin-right: 100%;
+}
+@keyframes header {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+
 
 .slider-container-fluid {
     margin-bottom: 50px;
 }
+
+
 .sections-container-fluid {
     margin-bottom: 50px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: black;
 }
-.sections-container-fluid :hover{
+.sections-container-fluid .col-b1 :hover{
+    background-color: rgba(196, 19, 19, 0.877);
+    color: white;
+}
+.sections-container-fluid .col-b2 :hover{
+    background-color: rgba(196, 19, 19, 0.678);
+    color: white;
+}
+.sections-container-fluid .col-b3 :hover{
+    background-color: rgba(196, 19, 19, 0.603);
+    color: white;
+}
+.sections-container-fluid .col-b4 :hover{
+    background-color: rgba(196, 19, 19, 0.582);
+    color: white;
+}
+.sections-container-fluid .col-b5 :hover{
+    background-color: rgba(196, 19, 19, 0.479);
+    color: white;
+}
+.sections-container-fluid .col-b6 :hover{
     background-color: rgba(196, 19, 19, 0.404);
     color: white;
 }
+
 
 footer {
     background-color: rgba(182, 34, 34, 0.644);

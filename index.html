@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@350&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>bootstrap</title>
+    <title>Home</title>
 </head>
 <body>
     
@@ -18,7 +22,7 @@
                 <div class="col">
                     <nav class="navbar navbar-expand-lg navbar-light ">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="#"><img src="LOGO.png" alt=""></a>
+                          <a href="https://florenciasrael.github.io/bootstrap/index.html" class="navbar-brand" href="#"><img src="LOGO.png" class="logoheader"></a>
                           <!-- botton hamburger -->
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -28,22 +32,17 @@
                           <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
                               <li class="nav-item">
-                               <a href="index.html#SobreMi"> <a class="nav-link active" aria-current="page" href="#">Sobre Mí</a></a>
+                               <a href="index.html#SobreMi"> <a class="nav-link active" aria-current="page" href="#SobreMi">Conoceme</a></a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">E-Books</a>
+                                <a class="nav-link" href="#E-Book">E-Books</a>
                               </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Mi Perfil
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Carrito</a></li>
-                                  <li><a class="dropdown-item" href="#">Perfil</a></li>
-                                </ul>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Contactanos</a>
-                                </li>
+                              <li class="nav-item">
+                                <a href="carrito.html" class="nav-link" href="#">Carrito</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="contactanos.html" class="nav-link" href="#">Contactanos</a>
+                              </li>
                               </li>
                               
                             </ul>
@@ -98,8 +97,26 @@
                   </div>
             </div>
         </div>
-        
-        <div class="sections-container-fluid" id="SobreMi">
+
+      <div class="coment">
+        </div><div class="container card" id="SobreMi">
+          <div class="card-header" style="font-family: 'Lobster', cursive; font-size: 150%;">
+            ¿Quién es Paulina Cocina?
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Paulina Cocina no es mi verdadero nombre, soy argentina y fue en el año 2008, mientras cursaba un doctorado en Sociología cuando decidí filmar un video cocinando un pastel de papas. Así fue como nació mi otro yo y el personaje que mas feliz me hace en esta vida, Paulina Cocina</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+        <div class="sections-container-fluid">
           <div class="container">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col-b1">
@@ -120,29 +137,29 @@
               </div>
             </div></a>
             <div class="col-b3">
-              <div class="card h-100">
+              <a href="https://florenciasrael.github.io/MeetAndGreet/merch.html"><div class="card h-100">
                 <div class="card-body">
                   <h5 class="card-title">MERCHANDISING</h5>
                   <p class="card-text">No te quedes sin tu delantal para cocinar!</p>
                 </div>
               </div>
-            </div>
+            </div></a>
             <div class="col-b4">
-              <div class="card h-100">
+              <a href="https://florenciasrael.github.io/MeetAndGreet/entrevistas.html"><div class="card h-100">
                 <div class="card-body">
                   <h5 class="card-title">ENTREVISTAS</h5>
                   <p class="card-text">Te invito a ver los programas en los que estuve y sus mejores momentos!</p>
                 </div>
               </div>
-            </div>
+            </div></a>
             <div class="col-b5">
-              <div class="card h-100">
+              <a href="https://florenciasrael.github.io/MeetAndGreet/cursos.html"><div class="card h-100">
                 <div class="card-body">
                   <h5 class="card-title">CURSOS</h5>
                   <p class="card-text"> Se acabó lo que se daba, BASTA DE DELIVERY!! Aprende a cocinar conmigo, dale que es mas facil de lo que pensas</p>
                 </div>
               </div>
-            </div>
+            </div></a>
             <div class="col-b6">
               <a href="https://www.youtube.com/c/PaulinaCocinaNetBlog"><div class="card h-100">
                 <div class="card-body">
@@ -155,7 +172,7 @@
         </div>  
         </div>
 
-        <div class="ebook container">
+        <div class="ebook-container" id="E-Book">
 
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <!--indicadores tiene q haber concordancia, no puedo tener 4 items y 2 indicadores. con el data-bs-slide-to le indico q foto sigue despues de esa img-->
