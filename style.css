@@ -15,6 +15,9 @@ header {
     animation-name: header;
     animation-duration: 0,5s;
 }
+header:hover {
+    color: white;
+}
 .logoheader img {
     margin-right: 100%;
 }
@@ -65,7 +68,72 @@ header {
     color: white;
 }
 
+/*CURSOS*/
+.cursos {
+    display: flex;
+    background-color: red;
+}
 
+/*MERCH*/
+.col-A {
+    overflow: hidden;
+}
+.card-img {
+    transition-property: all;
+    transition: 1s;
+    overflow: hidden;
+}	
+.card-img:hover {
+    transform: scale(110%); 
+    transition: 1s;
+}
+.container h1 {
+    animation-name: txtentrevista;
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+
+
+/*ENTREVISTAS*/	
+.entrevistas {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.col-e:hover {
+    transform: scale(1.05);
+}
+.txt .container{
+    font-size: 170%;
+    animation-name: txtentrevista;
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+
+@keyframes txtentrevista {
+    0% {
+        opacity: 0%;
+        transform: scale(0.0);
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(1.02);
+    }
+    
+}
+
+/*CONTACTO*/	
+.form1 {
+    background-color: rgba(255, 255, 255, 0.596);
+    margin-bottom: 70px;
+}
+    .col-13 .btn-primary:hover {
+        background-color: white;
+        color: blue;
+    }
+
+
+
+/*FOOTER*/	
 footer {
     background-color: rgba(182, 34, 34, 0.644);
     text-align: center;
