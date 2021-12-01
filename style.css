@@ -30,18 +30,13 @@ header a:hover {
     }
 }
 
-
-
 .slider-container-fluid {
     margin-bottom: 50px;
 }
 
-
 .sections-container-fluid {
     margin-bottom: 50px;
     margin-top: 50px;
-    text-decoration: none;
-    color: black;
 }
 .sections-container-fluid .col-b1 :hover{
     background-color: rgba(196, 19, 19, 0.877);
@@ -68,6 +63,18 @@ header a:hover {
     color: white;
 }
 
+.sections-container-fluid .links {
+    text-decoration: none;
+    color: rgb(201, 0, 0);
+}
+
+.ebook-container .img {
+    margin-bottom: 20px;
+    padding: 60px;
+    padding-top: 0;
+}
+
+
 /*CURSOS*/
 .cursos {
     display: flex;
@@ -92,6 +99,52 @@ header a:hover {
     animation-delay: 0s;
     animation-duration: 5s;
 }
+.card-body .btn-primary:hover {
+    background-color: white;
+    color: blue;
+    animation-name: boton;
+    animation-duration: 1s;
+}
+
+@keyframes boton {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.06);
+    }
+    
+}
+
+
+/*VER MAS*/
+.container .contene{
+    background-color: rgba(255, 255, 255, 0.514);
+    padding-left: 60px;
+    margin-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+}
+.card-body-A {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25%;
+    text-align: center;
+}
+.card-body-A .btn-primary {
+    width: 85%;
+}
+
+.card-body-A .btn-primary:hover {
+    background-color: white;
+    color: blue;
+    animation-name: boton;
+    animation-duration: 1s;
+}
 
 
 /*ENTREVISTAS*/	
@@ -99,12 +152,19 @@ header a:hover {
     margin-bottom: 50px;
     margin-top: 30px;
 }
-.card-body .h5{
+.col-e .links{
     text-decoration: none;
+    color: black;
 }
+.col-e .links:hover {
+    color: rgb(201, 0, 0);
+    
+}
+
 .col-e:hover {
     transform: scale(1.05);
 }
+
 .txt .container{
     font-size: 170%;
     animation-name: txtentrevista;
