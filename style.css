@@ -77,8 +77,36 @@ header a:hover {
 
 /*CURSOS*/
 .cursos {
-    display: flex;
-    background-color: red;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.cursos:hover {
+    box-shadow: red;
+}
+
+.rounded-start{
+    width: 100%;
+    margin-top: 30%;
+}
+
+.container .flor {
+    animation-name: cursoflor;
+    animation-duration: 3s;
+}
+
+.container .flor:hover {
+    transform: translateX(-30%);
+    transition-duration: 3s;
+}
+
+@keyframes cursoflor {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 /*MERCH*/
